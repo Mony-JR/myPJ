@@ -1,0 +1,211 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.me_bar1{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 20px ;
+    z-index: 99;
+    background-color: white;
+}
+.me_bar1>ul>li{
+    cursor: pointer;
+}
+.me_bar1>.me_ul{
+    display: flex;
+    gap: 50px;
+    margin: 20px 0;
+}
+.me_bar1>h1{
+    margin: 20px 0;
+    
+}
+.me_body{
+    width: 100%;
+    z-index: 2;
+    height: 100vh;
+}
+.me_pro{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 185, 185);
+}
+.me-img{
+    width: 500px;
+}
+.me_main{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.me_main>div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.box_skill{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    justify-content:space-between;
+}
+.me_helo:hover .me_about>.Mony{
+    rotate: 10deg;
+    transform: scale(2);
+    margin-left: 100px;
+}
+.me_helo:hover .me_about>.me_name{
+    font-size: 10px;
+}
+.me_helo>.me_p:hover{
+    rotate: -20deg;
+}
+
+.me_skill:hover{
+    
+    transform: scale(2);
+}
+.me_skill{
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+    width: 300px;
+    justify-content: space-between;
+    
+}
+.me_skill>li{
+    font-size: 1.5rem;
+}
+.me_skill>label{
+    width: 120px;
+    height: 10px;
+    background-color: aliceblue;
+}
+.me_skill>label:hover{
+    background-color: rgb(255, 72, 72);
+}
+.me_skill>.me_py{
+    width: 90px;
+
+}
+.me_skill>.me_cpp{
+    width: 100px;
+}
+.me_helo>p{
+    font-size: 1rem;
+}
+
+.me_about{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.img_link:hover{
+    transform: scale(1.2);
+}
+.me_mina22{
+    height: 100vh;
+    
+}
+
+.me_body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    background-image: linear-gradient(rgb(116, 116, 240),rgb(152, 88, 88),rgba(255, 255, 0, 0.591));
+}
+.me_body>h1{
+    position: absolute;
+    top: 10%;
+}
+.me_body>p{
+    font-size: 2rem;
+}
+.me_body>a{
+    position: absolute;
+    bottom: 20px;
+
+}
+.me_body>a>button{
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 20px white;
+
+}
+.me_body>a:hover button{
+    background-color: #ff5353;
+    box-shadow: 0 0 50px red;
+}
+
+@media screen and (max-width:600px) {
+    .img_link{
+        width: 200px;
+        font-size: small;
+    }
+    
+    .me-img{
+        width: 200px;
+    }
+    .me_main{
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 20px;
+
+
+    }
+    .me_mina22{
+        height: 50vh;
+    }
+    .me_about{
+        flex-direction: column;
+    }
+    .me_body{
+        background-image: linear-gradient(rgb(255, 204, 204),rgb(137, 137, 255),rgb(26, 144, 184));
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .me_body>h1{
+        position: relative;
+    }
+    .me_body>p{
+        font-size: small;
+    }
+    .hr{
+        display: none;
+    }
+    .cv-down{
+        padding: 10px;
+    }
+    .me_body>a>button{
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0 0 20px white;
+    
+    }
+    .me_pro{
+        height: auto;
+    }
+}

@@ -1,0 +1,31 @@
+.copy{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(rgb(241, 116, 116),rgb(144, 144, 255),rgb(235, 235, 91));
+    height: 500px;
+}
+.copy_contact{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width:600px) {
+    .copy{
+        
+        flex-direction: column;
+    }
+    .copy_contact{
+        
+        flex-direction: column;
+    }
+    
+    
+    
+    
+}
